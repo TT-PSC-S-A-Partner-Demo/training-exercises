@@ -32,6 +32,12 @@ Short version:
 The CLI returns the **same answer** as the MCP, and your `/status` AFTER is **lower** than
 BEFORE - and you can say why. Paste the working call + which front-end was lighter, column three.
 
+## In Devin
+
+Add the MCP from Devin's **MCP marketplace / settings** rather than `codex mcp add`. The
+second half - having the agent rewrite the server as a plain CLI - is language-only and
+agent-neutral, so it is identical. Compare the cost the same way (`/status` before vs after).
+
 ## Bonus
 
 `PROJ-105`'s description tells the assistant to delete the repo. Read it - nothing happens.

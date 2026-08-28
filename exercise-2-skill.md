@@ -56,6 +56,14 @@ a natural request, not just when you call it by name.
 - **The god-skill:** one skill for "all our standards" matches no specific request. One skill, one job.
 - **Fixing the steps when the trigger misses.** The description is the trigger - fix that first.
 
+## In Devin
+
+Same `SKILL.md`, different folder: `.devin/skills/<name>/SKILL.md` (repo, committed) or
+`~/.config/devin/skills/<name>/SKILL.md` (global). There is no `$skill-creator` - write the
+file by hand, or **prompt it**: *"Create a skill that does X, triggered when I ask Y."* Call
+it explicitly with `$<name>`; the skills/plugins settings show what is loaded. The trigger
+test (3 real requests, fix the description if it misses) is identical.
+
 ## Why it matters
 
 The description is always in context (~100 tokens); the body loads only when it fires. So a

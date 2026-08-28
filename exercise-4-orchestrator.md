@@ -62,7 +62,17 @@ green, and add one test proving a blank path returns that message.
 > read-only and import the module / run the function directly under your characterization
 > tests. If the full clone or import fights you on the day, fall back to `demo-kit-python`.
 
+## In Devin
+
+Devin does not use `.codex/agents/*.toml`. Its orchestration is **"Devin manages Devins"**:
+one Devin delegates the stages to a team of managed Devins working in parallel. The three
+stage skills live in `.devin/skills/`, and you **trigger the chain with a prompt** that
+describes the SDLC (spec -> implement -> test -> review) rather than registering agents in a
+config file. Same shape, same handoffs; the review stage is a delegated Devin instead of a
+`reviewer.toml` subagent.
+
 ## Done when
 
 One prompt runs all four stages **in order**, tests end green, the reviewer runs as a
-**separate** read-only agent, and you can point to the spec that drove the code.
+**separate** read-only agent (or a delegated Devin), and you can point to the spec that
+drove the code.

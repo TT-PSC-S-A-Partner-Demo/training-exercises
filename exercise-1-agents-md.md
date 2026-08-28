@@ -42,6 +42,16 @@ repeating it.
 - **A rule with no example.** "Follow best practices" fires nothing. Show the rule.
 - **Not proving it.** The fresh-chat test is the point; skipping it means you don't know it works.
 
+## In Devin
+
+Devin has no `/init`. **Trigger it with a prompt** instead:
+> *"Create a concise AGENTS.md for this repo - build/test commands, language versions,
+> off-limits directories, and one review rule with a one-line example. Keep it under 50 lines."*
+
+Then cut it the same way, add your show-don't-tell rule, and run the fresh-chat prove-it
+test exactly as above. `AGENTS.md` is the **open standard** - Devin reads the repo-root file
+just like Codex, so the file you end up with serves both.
+
 ## Why it matters
 
 AGENTS.md is read on **every turn**, so every line is taxed every time. A tight one is a
