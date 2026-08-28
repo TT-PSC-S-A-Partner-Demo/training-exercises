@@ -50,6 +50,12 @@ a natural request, not just when you call it by name.
 - `/skills` lists it **and** it fires from a natural request, not just `$name`.
 - Pasted in column two.
 
+## Advanced variant - a skill for a legacy repo
+
+Finished early, or want something meatier? Write a **"working in this repo" skill** that
+captures a legacy codebase's build steps, conventions and landmines, so the agent stops
+re-discovering them. Full instructions: [exercise-5-legacy-skill.md](exercise-5-legacy-skill.md).
+
 ## Common mistakes
 
 - **Description written for a human**, not a matcher: "helps with code quality" fires on nothing.

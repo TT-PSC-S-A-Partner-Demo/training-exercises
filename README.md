@@ -7,6 +7,7 @@ version; this repo is the full one, with tips, common mistakes, and reference an
 |---|---|---|
 | 1 | Trim an AGENTS.md, then prove it bites | [exercise-1-agents-md.md](exercise-1-agents-md.md) |
 | 2 | Build your own skill | [exercise-2-skill.md](exercise-2-skill.md) |
+| 2b | *(advanced)* A "working in this repo" skill for legacy code | [exercise-5-legacy-skill.md](exercise-5-legacy-skill.md) |
 | 3 | MCP, then the same thing as a CLI | [exercise-3-mcp-cli.md](exercise-3-mcp-cli.md) |
 | 4 | Build your own orchestrator (SDLC chain) | [exercise-4-orchestrator.md](exercise-4-orchestrator.md) |
 
