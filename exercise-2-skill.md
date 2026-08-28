@@ -44,6 +44,15 @@ a natural request, not just when you call it by name.
        "expected_behavior": ["fires without naming the skill", "flags unwrapped errors"] } ] }
    ```
 8. **Share.** Paste the skill name + description in the shared sheet, column two.
+9. **(Optional) Audit it** with the skill-auditor - it grades the description, single
+   responsibility, size, evals and safety, and writes a fix report:
+   ```bash
+   git clone https://github.com/TT-PSC-S-A-Partner-Demo/training-skill-auditor
+   cp -r training-skill-auditor/skill-auditor ~/.codex/skills/skill-auditor
+   /skills
+   ```
+   Then: *"audit ~/.codex/skills/&lt;name&gt;/SKILL.md"*. Fix what it flags - usually the
+   description or missing evals - and re-audit.
 
 ## Done when
 

@@ -55,6 +55,9 @@ newcomer would trip on.
    without you naming the skill.
 5. **Team play.** Commit it to `.codex/skills/` (or `.devin/skills/`) so a teammate inherits
    the whole repo's onboarding by pulling.
+6. **(Optional) Audit it.** Run the skill-auditor (see Exercise 2, step 9) on your
+   `working-in-<repo>` skill - a repo skill grows fast, so watch the size gate and whether
+   the big module map should move to a `reference/` file.
 
 ## Done when
 
