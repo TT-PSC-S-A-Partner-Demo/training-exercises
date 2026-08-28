@@ -11,7 +11,7 @@ logic; pick the lighter one.
 ## You need
 
 - The **mcp-jira-lite** kit (repo: `training-mcp-jira-lite`), and either
-  `pip install "mcp[cli]"` (Python) or Go 1.21+ (Go version in `go/`).
+  `pip install "mcp[cli]<2"` (Python) or Go 1.21+ (Go version in `go/`).
 
 ## Full step-by-step
 
