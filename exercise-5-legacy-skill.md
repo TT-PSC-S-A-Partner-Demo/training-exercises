@@ -66,7 +66,7 @@ plus at least one gotcha - and it lives in the repo so the team gets it for free
 
 ## In Devin
 
-Same file, `.devin/skills/working-in-<repo>/SKILL.md`. No `$skill-creator` - write it by
+Same file, `.devin/skills/working-in-<repo>/SKILL.md`. No `/skill-creator` - write it by
 hand or prompt Devin to draft it from what it found while exploring.
 
 ## Why it matters

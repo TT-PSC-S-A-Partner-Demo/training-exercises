@@ -20,7 +20,7 @@ a natural request, not just when you call it by name.
    mkdir -p ~/.codex/skills/<name>
    $EDITOR ~/.codex/skills/<name>/SKILL.md
    ```
-   or let Codex do it: `$skill-creator`.
+   or let Codex do it: `/skill-creator`.
 3. **Write the frontmatter.** `name` + a description shaped **"Does X. Use when Y"**, third person,
    with the trigger words a person would actually type:
    ```
@@ -31,9 +31,9 @@ a natural request, not just when you call it by name.
    ---
    Flag any error not wrapped with %w. Require a table test for new funcs. Ignore vendor/.
    ```
-4. **Confirm it loaded.** `/skills` should list it.
+4. **Confirm it loaded.** `/plugins` should list it.
 5. **Test the trigger.** Take **3 real requests** from your own week, phrased naturally.
-   It should fire on all three **without** you typing `$<name>`.
+   It should fire on all three **without** you typing `/<name>`.
 6. **If it misses, fix the DESCRIPTION, not the steps.** Re-test. Almost every miss is a
    description problem.
 7. **(Optional) Write the checks down.** Add an `evals.json` next to the skill so anyone can
@@ -49,14 +49,14 @@ a natural request, not just when you call it by name.
    ```bash
    git clone https://github.com/TT-PSC-S-A-Partner-Demo/training-skill-auditor
    cp -r training-skill-auditor/skill-auditor ~/.codex/skills/skill-auditor
-   /skills
+   /plugins
    ```
    Then: *"audit ~/.codex/skills/&lt;name&gt;/SKILL.md"*. Fix what it flags - usually the
    description or missing evals - and re-audit.
 
 ## Done when
 
-- `/skills` lists it **and** it fires from a natural request, not just `$name`.
+- `/plugins` lists it **and** it fires from a natural request, not just `/name`.
 - Pasted in column two.
 
 ## Advanced variant - a skill for a legacy repo
@@ -74,9 +74,9 @@ re-discovering them. Full instructions: [exercise-5-legacy-skill.md](exercise-5-
 ## In Devin
 
 Same `SKILL.md`, different folder: `.devin/skills/<name>/SKILL.md` (repo, committed) or
-`~/.config/devin/skills/<name>/SKILL.md` (global). There is no `$skill-creator` - write the
+`~/.config/devin/skills/<name>/SKILL.md` (global). There is no `/skill-creator` - write the
 file by hand, or **prompt it**: *"Create a skill that does X, triggered when I ask Y."* Call
-it explicitly with `$<name>`; the skills/plugins settings show what is loaded. The trigger
+it explicitly with `/<name>`; the skills/plugins settings show what is loaded. The trigger
 test (3 real requests, fix the description if it misses) is identical.
 
 ## Why it matters
